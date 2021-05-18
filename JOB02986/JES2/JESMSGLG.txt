@@ -1,0 +1,21 @@
+1                   J E S 2  J O B  L O G  --  S Y S T E M  S 0 W 1  --  N O D E  S V S C J E S 2
+0
+ 22.03.52 JOB02986 ---- MONDAY,    17 MAY 2021 ----
+ 22.03.52 JOB02986  IRR010I  USERID Z86842   IS ASSIGNED TO THIS JOB.
+ 22.03.52 JOB02986  IEF677I WARNING MESSAGE(S) FOR JOB HELLOCBL ISSUED
+ 22.03.54 JOB02986  ICH70001I Z86842   LAST ACCESS AT 22:00:57 ON MONDAY, MAY 17, 2021
+ 22.03.54 JOB02986  $HASP373 HELLOCBL STARTED - INIT 1    - CLASS A        - SYS S0W1
+ 22.03.57 JOB02986  -                                      -----TIMINGS (MINS.)------                          -----PAGING COUNTS----
+ 22.03.57 JOB02986  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+ 22.03.57 JOB02986  -COBRUN   COBOL       00  13391    174       .00       .00     .0            47  BATCH        0     0     0     0
+ 22.03.57 JOB02986  -COBRUN   LKED        00    259     36       .00       .00     .0            58  BATCH        0     0     0     0
+ 22.03.57 JOB02986  -COBRUN   GO          00     36     12       .00       .00     .0             6  BATCH        0     0     0     0
+ 22.03.57 JOB02986  -HELLOCBL ENDED.  NAME-                     TOTAL TCB CPU TIME=      .00 TOTAL ELAPSED TIME=    .0
+ 22.03.57 JOB02986  $HASP395 HELLOCBL ENDED - RC=0000
+0------ JES2 JOB STATISTICS ------
+-  17 MAY 2021 JOB EXECUTION DATE
+-            2 CARDS READ
+-          459 SYSOUT PRINT RECORDS
+-            0 SYSOUT PUNCH RECORDS
+-           27 SYSOUT SPOOL KBYTES
+-         0.08 MINUTES EXECUTION TIME

@@ -1,0 +1,19 @@
+{
+  "name": "cobol-programming-course",
+  "version": "1.0.0",
+  "description": "Automation for COBOL Program",
+  "main": "index.js",
+  "scripts": {
+    "clg": "zowe jobs submit ds 'Z86842.JCL(HELLO)' -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevingabayan/cobol-programming-course.git"
+  },
+  "author": "Kevin Gabayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevingabayan/cobol-programming-course/issues"
+  },
+  "homepage": "https://github.com/kevingabayan/cobol-programming-course#readme"
+}

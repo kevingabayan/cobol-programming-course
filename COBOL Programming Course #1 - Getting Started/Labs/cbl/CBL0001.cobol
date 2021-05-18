@@ -37,7 +37,7 @@
       *
        FD  ACCT-REC RECORDING MODE F.
        01  ACCT-FIELDS.
-           05  ACCT-NO            PIC X(8).
+           05  ACCT-NO-TEST            PIC X(8).
            05  ACCT-LIMIT         PIC S9(7)V99 COMP-3.
            05  ACCT-BALANCE       PIC S9(7)V99 COMP-3.
       * PIC S9(7)v99 -- seven-digit plus a sign digit value
@@ -62,7 +62,7 @@
            OPEN OUTPUT PRINT-LINE.
       *
        READ-NEXT-RECORD.
-           PERFORM READ-RECORD
+           PERFORM READ-NEW-RECORD
       *     The previous statement is needed before entering the loop.
       *     Both the loop condition LASTREC = 'Y'
       *     and the call to WRITE-RECORD depend on READ-RECORD having
@@ -70,7 +70,7 @@
       *     The loop starts at the next line with PERFORM UNTIL
             PERFORM UNTIL LASTREC = 'Y'
             PERFORM WRITE-RECORD
-            PERFORM READ-RECORD
+            PERFORM READ-NEW-RECORD
             END-PERFORM
            .
       *
@@ -79,13 +79,13 @@
            CLOSE PRINT-LINE.
            GOBACK.
       *
-       READ-RECORD.
+       READ-NEW-RECORD.
            READ ACCT-REC
            AT END MOVE 'Y' TO LASTREC
            END-READ.
       *
        WRITE-RECORD.
-           MOVE ACCT-NO      TO  ACCT-NO-O.
+           MOVE ACCT-NO-TEST      TO  ACCT-NO-O.
            MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.
            MOVE ACCT-BALANCE TO  ACCT-BALANCE-O.
            MOVE LAST-NAME    TO  LAST-NAME-O.
